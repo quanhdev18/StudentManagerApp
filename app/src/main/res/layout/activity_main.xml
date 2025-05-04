@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Dòng: Họ tên + Add + Update -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="20"
+            android:hint="Họ tên" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Upd"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Dòng: MSSV + Delete -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/student_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="MSSV"
+            android:maxLength="9"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Danh sách -->
+    <ListView
+        android:id="@+id/data_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
